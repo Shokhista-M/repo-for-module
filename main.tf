@@ -19,7 +19,6 @@ provider "aws" {}
 
 module "iam" {
   source = "./modules/iam"
-   read_only = {
-    default = ["read_only_user_1", "read_only_user_2", "read_only_user_3"]
-   }
+   read_only = ["read_only_user_1", "read_only_user_2", "read_only_user_3"]
+   
 }

@@ -1,5 +1,5 @@
 variable "read_only" {
-    type = list (string)
+    type = list
      default = ["read_only_user_1", "read_only_user_2", "read_only_user_3"]
 }
 
